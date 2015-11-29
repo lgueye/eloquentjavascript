@@ -284,6 +284,6 @@ var byName = {};
 ancestry.forEach(function (person) {
     byName[person.name] = person;
 });
-var filteredAncestry = ancestry.filter(person = > byName[person.mother]);
-var differences = filteredAncestry.map(person = > person.born - byName[person.mother].born);
+var filteredAncestry = ancestry.filter(function(person) {return byName[person.mother];} );
+var differences = filteredAncestry.map(function (person) {return person.born - byName[person.mother].born;} );
 console.log(average(differences));

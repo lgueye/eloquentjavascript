@@ -1,6 +1,6 @@
 function reverseArray(input) {
   var result = [];
-  for (var item of input) {
+  for (var item in input) {
     result.unshift(item);
   }
   return result;

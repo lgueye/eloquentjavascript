@@ -8,7 +8,7 @@ function range(start, end) {
 
 function sum(input) {
   var result = 0;
-  for (var item of input) {
+  for (var item in input) {
     result += item;
   }
   return result;
