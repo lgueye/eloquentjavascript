@@ -1,7 +1,7 @@
 function reverseArray(input) {
   var result = [];
-  for (var item in input) {
-    result.unshift(item);
+  for (var index = 0; index < input.length; index++) {
+    result.unshift(input[index]);
   }
   return result;
 }
@@ -10,7 +10,7 @@ function reverseArrayInPlace(input) {
   for (var index = 0; index < input.length / 2; index++) {
     var tmp;
     var sourceIndex = index;
-    var targetIndex = input.length -1 - sourceIndex;
+    var targetIndex = input.length - 1 - sourceIndex;
     tmp = input[sourceIndex];
     input[sourceIndex] = input[targetIndex];
     input[targetIndex] = tmp;

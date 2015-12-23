@@ -1,14 +1,20 @@
 function every(input, predicate) {
   var result = true;
-  input.forEach(function(item) {
-    if (!predicate(item)) {result = false; return;}
+  input.forEach(function (item) {
+    if (!predicate(item)) {
+      result = false;
+      return;
+    }
   });
   return result;
 }
 function some(input, predicate) {
   var result = false;
-  input.forEach(function(item) {
-    if (predicate(item)) {result = true; return;}
+  input.forEach(function (item) {
+    if (predicate(item)) {
+      result = true;
+      return;
+    }
   });
   return result;
 }
