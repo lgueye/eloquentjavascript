@@ -1,20 +1,11 @@
-function loopingTriangle() {
-  var result = [];
-  for (var i = 0; i < 7; i++) {
-    var item = buildItem(i+1);
-    result.push(item);
+function loopingTriangle(input) {
+  var result = "";
+  for (var i = 0; i < input; i++) {
+    for (var j = 0; j < i + 1; j++) {
+      result += "#";
+      if (i === j && i !== input -1) result += "\n";
+    }
   }
   return result;
 }
 
-function loopingTriangleString() {
-  return loopingTriangle().join("\n");
-}
-
-function buildItem(i) {
-  var item = "";
-  for (var index = 0; index < i; index ++) {
-    item += "#";
-  }
-  return item;
-}

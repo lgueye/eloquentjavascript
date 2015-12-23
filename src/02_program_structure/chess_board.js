@@ -1,15 +1,10 @@
 function chessBoard(gridSize) {
   var result = "";
-  for (var i = 0; i < gridSize; i++) {
-    result += buildNewLine(gridSize, i);
+  for (var i = 1; i <= gridSize; i++) {
+    for (var j = 1; j <= gridSize; j++) {
+      result += (i + j) % 2 !== 0 ? "#" : " ";
+      result += (j === gridSize && i !== gridSize) ? "\n": "";
+    }
   }
   return result;
 }
-function buildNewLine(gridSize, j) {
-  var line = "";
-  for (var i = 0; i < gridSize; i++) {
-    line += (i+j) % 2 !== 0 ? "#" : " ";
-  }
-  return line + "\n";
-}
-//console.log(chessBoard(8));
