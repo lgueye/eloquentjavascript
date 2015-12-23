@@ -296,9 +296,9 @@ var personByCentury = groupBy(ancestry, function (person) {
     return Math.ceil(person.died / 100);
 });
 
-for (var key in personByCentury) {
-    console.log(key + ": " + average(personByCentury[key].map(function(person) { return person.died - person.born; })));
-}
+//for (var key in personByCentury) {
+//    console.log(key + ": " + average(personByCentury[key].map(function(person) { return person.died - person.born; })));
+//}
 // → 16: 43.5
 //   17: 51.2
 //   18: 52.8

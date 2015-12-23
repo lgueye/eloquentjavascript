@@ -17,9 +17,9 @@ function reverseArrayInPlace(input) {
   }
 }
 
-console.log(reverseArray(["A", "B", "C"]));
+//console.log(reverseArray(["A", "B", "C"]));
 // → ["C", "B", "A"];
-var arrayValue = [1, 2, 3, 4, 5];
-reverseArrayInPlace(arrayValue);
-console.log(arrayValue);
+//var arrayValue = [1, 2, 3, 4, 5];
+//reverseArrayInPlace(arrayValue);
+//console.log(arrayValue);
 // → [5, 4, 3, 2, 1]

@@ -8,8 +8,8 @@ function chessBoard(gridSize) {
 function buildNewLine(gridSize, j) {
   var line = "";
   for (var i = 0; i < gridSize; i++) {
-    line += (i+j) % 2 != 0 ? "#" : " ";
+    line += (i+j) % 2 !== 0 ? "#" : " ";
   }
   return line + "\n";
 }
-console.log(chessBoard(8));
+//console.log(chessBoard(8));

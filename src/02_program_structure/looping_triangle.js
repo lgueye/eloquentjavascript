@@ -7,6 +7,10 @@ function loopingTriangle() {
   return result;
 }
 
+function loopingTriangleString() {
+  return loopingTriangle().join("\n");
+}
+
 function buildItem(i) {
   var item = "";
   for (var index = 0; index < i; index ++) {
@@ -14,5 +18,3 @@ function buildItem(i) {
   }
   return item;
 }
-
-loopingTriangle().forEach(console.log);

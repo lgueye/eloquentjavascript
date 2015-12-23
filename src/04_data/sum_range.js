@@ -13,5 +13,5 @@ function sum(input) {
   }
   return result;
 }
-console.log(sum(range(1, 10)));
+//console.log(sum(range(1, 10)));
 // → 55
