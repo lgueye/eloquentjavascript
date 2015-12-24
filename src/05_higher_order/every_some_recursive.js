@@ -1,12 +1,13 @@
 function every(input, predicate) {
-  if (!input || input.length === 0) return false;
-  if (input.length == 1) return predicate(input.pop());
-  return predicate(input.pop()) && every(input, predicate);
+    if (!input || input.length === 0) return false;
+    if (input.length == 1) return predicate(input.pop());
+    return predicate(input.pop()) && every(input, predicate);
 }
+
 function some(input, predicate) {
-  if (!input || input.length === 0) return false;
-  if (input.length == 1) return predicate(input.pop());
-  return predicate(input.pop()) || some(input, predicate);
+    if (!input || input.length === 0) return false;
+    if (input.length == 1) return predicate(input.pop());
+    return predicate(input.pop()) || some(input, predicate);
 }
 
 //console.log(every([NaN, NaN, NaN], isNaN));

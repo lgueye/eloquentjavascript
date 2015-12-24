@@ -1,4 +1,4 @@
-describe("list implementation test suite", function() {
+describe("flattening implementation test suite", function() {
     it("arrayToList([10, 20]) should return {value: 10, rest: {value: 20, rest: null}}", function() {
         // Given
         var input = [10, 20];

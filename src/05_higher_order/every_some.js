@@ -1,22 +1,23 @@
 function every(input, predicate) {
-  var result = true;
-  input.forEach(function (item) {
-    if (!predicate(item)) {
-      result = false;
-      return;
-    }
-  });
-  return result;
+    var result = true;
+    input.forEach(function(item) {
+        if (!predicate(item)) {
+            result = false;
+            return;
+        }
+    });
+    return result;
 }
+
 function some(input, predicate) {
-  var result = false;
-  input.forEach(function (item) {
-    if (predicate(item)) {
-      result = true;
-      return;
-    }
-  });
-  return result;
+    var result = false;
+    input.forEach(function(item) {
+        if (predicate(item)) {
+            result = true;
+            return;
+        }
+    });
+    return result;
 }
 
 //console.log(every([NaN, NaN, NaN], isNaN));
