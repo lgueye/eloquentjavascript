@@ -1,15 +1,3 @@
-function chekcExpectation(regexp, input, expected) {
-    input.forEach(function(s) {
-        // When
-        var actual = regexp.test(s);
-        // Then
-        if (actual !== expected) {
-            console.log("Failure to match '" + s + "'");
-        }
-        expect(actual).toEqual(expected);
-    });
-}
-
 describe("regexp golf test suite", function() {
     it("car and cat regexp", function() {
         var regexp = /ca[rt]/;
